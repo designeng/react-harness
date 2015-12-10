@@ -1,0 +1,32 @@
+{
+  "name": "react-karma-webpack-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "chai": "^3.4.1",
+    "karma": "^0.13.15",
+    "karma-chai": "^0.1.0",
+    "karma-chai-plugins": "^0.6.1",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-cli": "^0.1.1",
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-sourcemap-loader": "^0.3.6",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.3.4",
+    "phantomjs": "^1.9.19",
+    "phantomjs-polyfill": "0.0.1",
+    "webpack": "^1.12.9"
+  }
+}

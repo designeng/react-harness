@@ -17,7 +17,8 @@ module.exports = function (config) {
       'karma-chai',
       'karma-mocha',
       'karma-sourcemap-loader',
-      'karma-webpack'
+      'karma-webpack',
+      'karma-osx-reporter'
     ],
 
     // run the bundle through the webpack and sourcemap plugins
@@ -25,7 +26,7 @@ module.exports = function (config) {
       'tests.bundle.js': [ 'webpack', 'sourcemap' ]
     },
 
-    reporters: [ 'dots' ],
+    reporters: [ 'dots', 'osx' ],
 
     singleRun: true,
 
@@ -36,7 +37,15 @@ module.exports = function (config) {
         loaders: [
           {
             exclude: /node_modules/,
-            loader: 'babel-loader',
+            loader: 'babel',
+            test: /\.js?$/,
+            query: {
+              presets: ['es2015', 'stage-0'],
+            }
+          },
+          {
+            exclude: /node_modules/,
+            loader: 'babel',
             test: /\.jsx?$/
           }
         ],

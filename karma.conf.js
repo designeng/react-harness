@@ -28,7 +28,7 @@ module.exports = function (config) {
 
     reporters: [ 'dots', 'osx' ],
 
-    singleRun: true,
+    singleRun: false,
 
     // webpack config object
     webpack: {
